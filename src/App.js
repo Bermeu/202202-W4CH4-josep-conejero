@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <p>prueba</p>;
+  return <p>prueba de texto</p>;
 }
 
 export default App;
