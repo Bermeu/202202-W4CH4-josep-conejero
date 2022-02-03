@@ -1,7 +1,10 @@
 import "./App.css";
+import Button from "./components/Button/Button";
 
 function App() {
-  return <p>prueba de texto</p>;
+  const textoButton = "siguiente";
+
+  return <Button texto={textoButton} />;
 }
 
 export default App;
