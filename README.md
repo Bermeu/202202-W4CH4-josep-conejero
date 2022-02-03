@@ -1,29 +1,53 @@
-# Week 4 - Challenge 4
+# COMPONENTES Y RESPONSABILIDADES
 
-## Formulario React
+App
 
-Crea con React un formulario de tres pasos. En cada paso habrá un grupo de campos, y sólo se debe ver un paso a la vez. Pon en cada paso un botón para navegar al siguiente y otro para navegar al anterior (en el primer paso no debe verse el botón de anterior). En el tercer paso debe haber un botón "Acceder".
+- renderizar app
+- renderizar titles, inputs y buttons de cada estado
+- renderizar warning
+- cambiar estado
+- ocultar botones anterior y siguiente dependiendo de si está en el primero o en el tercer paso
+- ocultar botón siguiente hasta que no estén todos los campos de cada paso rellenados
+- cambiar título de cada paso
+- mostrar información final con todos los datos introducidos
+- mostrar label a la derecha del año de nacimiento cuando haya sido introducido
 
-En cada paso, el botón para continuar al siguiente paso debe estar deshabilitado hasta que se rellenen todos los campos del paso.
+Input
 
-Usar context.
+- recibir dato del usuario
+- renderizar input
+- comprobar que el input correspondiente es una fecha, un número o un email
+- ocultar la contraseña
 
-Utiliza Bootstrap para este ejercicio, instálalo mediante npm.
+Button
 
-- Paso 1: Personal data.
-  - Name
-  - Last name
-  - Birthdate (cuando el usuario introduzca la fecha, al lado de este campo debe aparecer su edad en años)
-  - Email
-- Paso 2: Access data.
-  - Username
-  - Password
-  - Repeat password
-- Paso 3: Login.
-  - Username
-  - Password
-  - Remember password (checkbox)
+- recibir click del usuario
+- renderizar botón
 
-En el paso 3, el usuario debe introducir los mismos datos que rellenó en el paso anterior. Si no son correctos debe aparecer un aviso diciéndolo.
+Warning
 
-Si son correctos, se le debe mostrar una pantalla con todos los datos introducidos en el formulario (sería como un cuarto paso).
+- renderizar aviso
+
+Title
+
+- renderizar título pasado
+
+Info
+
+- renderizar los datos del usuario
+
+# DATOS
+
+userData (objeto)
+state (number)
+completedInputs (array) (un valor por paso)
+
+Datos usuario:
+
+- Name
+- Last name
+- Birthdate (cuando el usuario introduzca la fecha, al lado de este campo debe aparecer su edad en años)
+- Email
+- Username
+- Password
+- Remember password (checkbox)
